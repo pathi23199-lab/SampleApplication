@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+      <meta charset="utf-8">
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+      <title>Financepeer Sample Template</title>
+      <meta content="" name="description">
+      <meta content="" name="keywords">
+<!--        <img  src="{%static 'images/favicon.png'%}" alt="My image">-->
+<!--        <img  src="{%static 'images/apple-touch-icon.png'%}" alt="My image">-->
+        <link rel="stylesheet" href="{%static 'vendor/bootstrap/css/bootstrap.min.css'%}" >
+        <link rel="stylesheet" href="{%static 'vendor/boxicons/css/boxicons.min.css'%}" >
+        <link rel="stylesheet" href="{%static 'css/style.css'%}">
+
+  <!-- Favicons -->
+<!--  <link href="assets/img/favicon.png" rel="icon">-->
+<!--  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">-->
+
+  <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+<!--  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+<!--  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">-->
+
+  <!-- Template Main CSS File -->
+<!--  <link href="assets/css/style.css" rel="stylesheet">-->
+
+  <!-- =======================================================
+  * Template Name: Siimple - v2.2.2
+  * Template URL: https://bootstrapmade.com/free-bootstrap-landing-page/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+    <style>
+
+<!--           .seprate{-->
+<!--                         width: 25%;-->
+<!--                   }-->
+<!--              body {-->
+
+<!--                         background-image: url('/static/images/hero-bg.jpg');-->
+<!--                         background-repeat: no-repeat;-->
+<!--                         background-attachment: fixed;-->
+<!--                         background-size: 100% 100%;-->
+<!--                    }-->
+<!--            .center {-->
+<!--                         margin: auto;-->
+<!--                         width: 60%;-->
+<!--&lt;!&ndash;                         border: 3px solid #73AD21;&ndash;&gt;-->
+<!--                         padding: 10px;-->
+<!--                    }-->
+
+    </style>
+  </head>
+<body>
+<table border="'2">
+    <thead>
+    <th>UserID</th>
+    <th>ID</th>
+    <th>Title</th>
+    <th>Body</th>
+    </thead>
+    {% for fp  in form %}
+      <tr>
+          <td>{{fp.UserId}}</td>
+           <td>{{fp.id}}</td>
+           <td>{{fp.title}}</td>
+           <td>{{fp.body}}</td>
+
+      </tr>
+    {%endfor%}
+</table>
+</body>
+</html>

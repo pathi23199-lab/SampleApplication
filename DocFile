@@ -1,0 +1,21 @@
+For reference,------------https://pypi.org/project/djongo/
+1.While using Mongodb or postgress
+  step1:pip install djongo
+2.add in setting.py file,
+      'default': {
+        'ENGINE': 'djongo',
+        'NAME': 'MongoDB',
+    }
+3.python manage.py migrate
+4.python manage.py makemigrations
+5.python manage.py createsuperuser
+   username:admin
+   password:admin123
+6.python manage.py runserver
+7.http://127.0.0.1:8000/admin/ for adimn url
+8.---------pip freeze --------to check list of installed modules
+
+
+Add
+
+pip install bcrypt,pip install django[argon2]
